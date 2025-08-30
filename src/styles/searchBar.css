@@ -1,0 +1,129 @@
+
+
+input {
+  height : 50px ;
+  width : 700px ; 
+  border : none ;
+  outline : none ; 
+  text-decoration : none ;
+}
+button {
+  border: none;
+  outline: none;
+  background: transparent; 
+  color: inherit;           
+  font: inherit;    
+  cursor: pointer;
+}
+
+.search-container {  
+  /* background-color: green;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+}
+.Tools {
+  display : flex ;
+  flex-direction : row ;
+  /* margin : 5px ;  */
+  justify-content : center ;
+  align-items : center ;
+  margin-left : 10px ;  
+}
+
+#tool-name {
+  margin-left : 5px ; 
+  margin-top : 25px ;
+}
+.underSearch {
+  height : 50px ;
+  width : 700px ;  
+  display : flex ;
+  flex-direction : row ; 
+  /* background-color : yellow ;  */
+  /* box-sizing : border-box;  */
+  justify-content : space-between ;
+}
+.underSearch-left {
+  height : 30px ;
+  /* background-color : red ; */
+  display : flex ;  
+  flex-direction : row ; 
+  padding : 5px ;
+  margin : 5px ; 
+  justify-content : center; 
+  align-items : center ;
+  text-align : center ;
+}
+
+/* .underSearch-right :hover , .Tools:hover {
+  background-color : gray; 
+} */
+
+.underSearch-right {
+  height : 50px ;
+  width : 50px ; 
+  margin : 5px ; 
+  /* background-color : red ; */
+  display : flex ;  
+  flex-direction : row ; 
+  padding : 5px ;
+ justify-content : center;  
+  align-items : center ;
+}
+
+.FullSearchBar {
+  border : solid black 1px ;
+  padding : 20px ; 
+  border-radius : 10px ; 
+  transition: transform 0.9s ease-in-out;
+}
+
+.FullSearchBar.active { 
+  transform: translateY(calc(100vh-100px));   
+}
+
+
+
+ul {
+  list-style : none ; 
+}
+
+
+.Content{
+  /* background-color : yellow ;  */
+  width : 1000px ;
+  height : 600px ; 
+  padding-left : 100px ; 
+  padding-right  : 100px ; 
+  overflow-x: hidden; 
+  scrollbar-width : none ; 
+  margin-bottom : 10px ;
+}
+
+
+li {
+  /* background-color: blue; */
+  color: black;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+
+.isUserTurn {
+  margin-left :auto  ; 
+  text-align : right ;
+  margin-bottom : 10px ; 
+  background-color : #f0f8f5 ; 
+  
+}
+.isBotTurn {
+  margin-right : auto ;
+  text-align : left ;
+  margin-bottom : 10px ; 
+
+}

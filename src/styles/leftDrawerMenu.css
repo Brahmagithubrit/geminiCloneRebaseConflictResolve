@@ -1,0 +1,58 @@
+.master {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-right: 10px;
+  gap: 10px;
+  background-color: #f7f7f7;
+  transition: all 0.7s ease;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.animate {
+  width: 50px;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.first button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.second {
+  flex: 1;
+  padding: 10px;
+  overflow-wrap: anywhere;
+  transition: all 0.3s ease;
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.animate .first span,
+.animate .second,
+.animate .third span {
+  display: none;
+}
+
+.animate .first,
+.animate .third {
+  justify-content: center;
+}
